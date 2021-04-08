@@ -2,7 +2,7 @@
 
 A new Flutter project.
 
-## Getting Started
+## Check out ther apk  in root folder
 
 This project is a starting point for a Flutter application.
 
