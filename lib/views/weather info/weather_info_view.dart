@@ -50,9 +50,9 @@ class _WeatherInfoViewState extends State<WeatherInfoView>
               labelColor: Colors.white,
               tabs: [
                 const Tab(
-                  text: 'Todays Weather',
+                  text: 'Current Weather',
                 ),
-                const Tab(text: 'Forecast'),
+                const Tab(text: '5 Days Forecast'),
               ],
               controller: _tabController,
               indicatorColor: orange,
