@@ -12,20 +12,20 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->C:\Users\MSI\Desktop\weather app\weather_app\android\app\src\main\AndroidManifest.xml:3:9-70
-14-->C:\Users\MSI\Desktop\weather app\weather_app\android\app\src\main\AndroidManifest.xml:3:26-68
+14-->C:\Users\MSI\Desktop\weather_forecast_app\android\app\src\main\AndroidManifest.xml:3:9-70
+14-->C:\Users\MSI\Desktop\weather_forecast_app\android\app\src\main\AndroidManifest.xml:3:26-68
 15    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-15-->C:\Users\MSI\Desktop\weather app\weather_app\android\app\src\main\AndroidManifest.xml:4:10-85
-15-->C:\Users\MSI\Desktop\weather app\weather_app\android\app\src\main\AndroidManifest.xml:4:27-83
+15-->C:\Users\MSI\Desktop\weather_forecast_app\android\app\src\main\AndroidManifest.xml:4:10-85
+15-->C:\Users\MSI\Desktop\weather_forecast_app\android\app\src\main\AndroidManifest.xml:4:27-83
 16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-16-->C:\Users\MSI\Desktop\weather app\weather_app\android\app\src\main\AndroidManifest.xml:5:11-84
-16-->C:\Users\MSI\Desktop\weather app\weather_app\android\app\src\main\AndroidManifest.xml:5:28-82
+16-->C:\Users\MSI\Desktop\weather_forecast_app\android\app\src\main\AndroidManifest.xml:5:11-84
+16-->C:\Users\MSI\Desktop\weather_forecast_app\android\app\src\main\AndroidManifest.xml:5:28-82
 17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-17-->[:connectivity] C:\Users\MSI\Desktop\weather app\weather_app\build\connectivity\intermediates\library_manifest\profile\AndroidManifest.xml:7:5-79
-17-->[:connectivity] C:\Users\MSI\Desktop\weather app\weather_app\build\connectivity\intermediates\library_manifest\profile\AndroidManifest.xml:7:22-76
+17-->[:connectivity] C:\Users\MSI\Desktop\weather_forecast_app\build\connectivity\intermediates\library_manifest\profile\AndroidManifest.xml:7:5-79
+17-->[:connectivity] C:\Users\MSI\Desktop\weather_forecast_app\build\connectivity\intermediates\library_manifest\profile\AndroidManifest.xml:7:22-76
 18    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-18-->[:connectivity] C:\Users\MSI\Desktop\weather app\weather_app\build\connectivity\intermediates\library_manifest\profile\AndroidManifest.xml:8:5-76
-18-->[:connectivity] C:\Users\MSI\Desktop\weather app\weather_app\build\connectivity\intermediates\library_manifest\profile\AndroidManifest.xml:8:22-73
+18-->[:connectivity] C:\Users\MSI\Desktop\weather_forecast_app\build\connectivity\intermediates\library_manifest\profile\AndroidManifest.xml:8:5-76
+18-->[:connectivity] C:\Users\MSI\Desktop\weather_forecast_app\build\connectivity\intermediates\library_manifest\profile\AndroidManifest.xml:8:22-73
 19    <uses-permission android:name="android.permission.WAKE_LOCK" />
 19-->[com.google.android.gms:play-services-measurement-api:18.0.2] C:\Users\MSI\.gradle\caches\transforms-2\files-2.1\63d7a7a2521f9f6bcc7ab8917213734e\jetified-play-services-measurement-api-18.0.2\AndroidManifest.xml:24:5-68
 19-->[com.google.android.gms:play-services-measurement-api:18.0.2] C:\Users\MSI\.gradle\caches\transforms-2\files-2.1\63d7a7a2521f9f6bcc7ab8917213734e\jetified-play-services-measurement-api-18.0.2\AndroidManifest.xml:24:22-65
@@ -42,35 +42,35 @@
 25-->[com.google.android.gms:play-services-measurement:18.0.2] C:\Users\MSI\.gradle\caches\transforms-2\files-2.1\597b2f0b8c3a797cc8fdd071fd492a7a\jetified-play-services-measurement-18.0.2\AndroidManifest.xml:26:22-107
 26
 27    <application
-27-->C:\Users\MSI\Desktop\weather app\weather_app\android\app\src\main\AndroidManifest.xml:7:4-48:19
+27-->C:\Users\MSI\Desktop\weather_forecast_app\android\app\src\main\AndroidManifest.xml:7:4-48:19
 28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 28-->[androidx.core:core:1.1.0] C:\Users\MSI\.gradle\caches\transforms-2\files-2.1\d481b4719f34ec119768e958e701eaf6\core-1.1.0\AndroidManifest.xml:24:18-86
 29        android:debuggable="true"
 30        android:icon="@mipmap/ic_launcher"
-30-->C:\Users\MSI\Desktop\weather app\weather_app\android\app\src\main\AndroidManifest.xml:9:9-43
+30-->C:\Users\MSI\Desktop\weather_forecast_app\android\app\src\main\AndroidManifest.xml:9:9-43
 31        android:label="weather_app" >
-31-->C:\Users\MSI\Desktop\weather app\weather_app\android\app\src\main\AndroidManifest.xml:8:9-36
+31-->C:\Users\MSI\Desktop\weather_forecast_app\android\app\src\main\AndroidManifest.xml:8:9-36
 32        <meta-data
-32-->C:\Users\MSI\Desktop\weather app\weather_app\android\app\src\main\AndroidManifest.xml:11:11-12:73
+32-->C:\Users\MSI\Desktop\weather_forecast_app\android\app\src\main\AndroidManifest.xml:11:11-12:73
 33            android:name="com.google.android.geo.API_KEY"
-33-->C:\Users\MSI\Desktop\weather app\weather_app\android\app\src\main\AndroidManifest.xml:11:22-67
+33-->C:\Users\MSI\Desktop\weather_forecast_app\android\app\src\main\AndroidManifest.xml:11:22-67
 34            android:value="AIzaSyAXnG4gSVD5Jwrl5Q1e9eAywoB5RIzbdp4" />
-34-->C:\Users\MSI\Desktop\weather app\weather_app\android\app\src\main\AndroidManifest.xml:12:16-71
+34-->C:\Users\MSI\Desktop\weather_forecast_app\android\app\src\main\AndroidManifest.xml:12:16-71
 35
 36        <activity
-36-->C:\Users\MSI\Desktop\weather app\weather_app\android\app\src\main\AndroidManifest.xml:14:9-42:20
+36-->C:\Users\MSI\Desktop\weather_forecast_app\android\app\src\main\AndroidManifest.xml:14:9-42:20
 37            android:name="com.example.weather_app.MainActivity"
-37-->C:\Users\MSI\Desktop\weather app\weather_app\android\app\src\main\AndroidManifest.xml:15:13-41
+37-->C:\Users\MSI\Desktop\weather_forecast_app\android\app\src\main\AndroidManifest.xml:15:13-41
 38            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-38-->C:\Users\MSI\Desktop\weather app\weather_app\android\app\src\main\AndroidManifest.xml:18:13-163
+38-->C:\Users\MSI\Desktop\weather_forecast_app\android\app\src\main\AndroidManifest.xml:18:13-163
 39            android:hardwareAccelerated="true"
-39-->C:\Users\MSI\Desktop\weather app\weather_app\android\app\src\main\AndroidManifest.xml:19:13-47
+39-->C:\Users\MSI\Desktop\weather_forecast_app\android\app\src\main\AndroidManifest.xml:19:13-47
 40            android:launchMode="singleTop"
-40-->C:\Users\MSI\Desktop\weather app\weather_app\android\app\src\main\AndroidManifest.xml:16:13-43
+40-->C:\Users\MSI\Desktop\weather_forecast_app\android\app\src\main\AndroidManifest.xml:16:13-43
 41            android:theme="@style/LaunchTheme"
-41-->C:\Users\MSI\Desktop\weather app\weather_app\android\app\src\main\AndroidManifest.xml:17:13-47
+41-->C:\Users\MSI\Desktop\weather_forecast_app\android\app\src\main\AndroidManifest.xml:17:13-47
 42            android:windowSoftInputMode="adjustResize" >
-42-->C:\Users\MSI\Desktop\weather app\weather_app\android\app\src\main\AndroidManifest.xml:20:13-55
+42-->C:\Users\MSI\Desktop\weather_forecast_app\android\app\src\main\AndroidManifest.xml:20:13-55
 43
 44            <!--
 45                 Specifies an Android theme to apply to this Activity as soon as
@@ -79,11 +79,11 @@
 48                 to determine the Window background behind the Flutter UI.
 49            -->
 50            <meta-data
-50-->C:\Users\MSI\Desktop\weather app\weather_app\android\app\src\main\AndroidManifest.xml:25:13-28:17
+50-->C:\Users\MSI\Desktop\weather_forecast_app\android\app\src\main\AndroidManifest.xml:25:13-28:17
 51                android:name="io.flutter.embedding.android.NormalTheme"
-51-->C:\Users\MSI\Desktop\weather app\weather_app\android\app\src\main\AndroidManifest.xml:26:15-70
+51-->C:\Users\MSI\Desktop\weather_forecast_app\android\app\src\main\AndroidManifest.xml:26:15-70
 52                android:resource="@style/NormalTheme" />
-52-->C:\Users\MSI\Desktop\weather app\weather_app\android\app\src\main\AndroidManifest.xml:27:15-52
+52-->C:\Users\MSI\Desktop\weather_forecast_app\android\app\src\main\AndroidManifest.xml:27:15-52
 53            <!--
 54                 Displays an Android View that continues showing the launch screen
 55                 Drawable until Flutter paints its first frame, then this splash
@@ -92,21 +92,21 @@
 58                 Flutter's first frame.
 59            -->
 60            <meta-data
-60-->C:\Users\MSI\Desktop\weather app\weather_app\android\app\src\main\AndroidManifest.xml:34:13-37:17
+60-->C:\Users\MSI\Desktop\weather_forecast_app\android\app\src\main\AndroidManifest.xml:34:13-37:17
 61                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-61-->C:\Users\MSI\Desktop\weather app\weather_app\android\app\src\main\AndroidManifest.xml:35:15-79
+61-->C:\Users\MSI\Desktop\weather_forecast_app\android\app\src\main\AndroidManifest.xml:35:15-79
 62                android:resource="@drawable/launch_background" />
-62-->C:\Users\MSI\Desktop\weather app\weather_app\android\app\src\main\AndroidManifest.xml:36:15-61
+62-->C:\Users\MSI\Desktop\weather_forecast_app\android\app\src\main\AndroidManifest.xml:36:15-61
 63
 64            <intent-filter>
-64-->C:\Users\MSI\Desktop\weather app\weather_app\android\app\src\main\AndroidManifest.xml:38:13-41:29
+64-->C:\Users\MSI\Desktop\weather_forecast_app\android\app\src\main\AndroidManifest.xml:38:13-41:29
 65                <action android:name="android.intent.action.MAIN" />
-65-->C:\Users\MSI\Desktop\weather app\weather_app\android\app\src\main\AndroidManifest.xml:39:17-68
-65-->C:\Users\MSI\Desktop\weather app\weather_app\android\app\src\main\AndroidManifest.xml:39:25-66
+65-->C:\Users\MSI\Desktop\weather_forecast_app\android\app\src\main\AndroidManifest.xml:39:17-68
+65-->C:\Users\MSI\Desktop\weather_forecast_app\android\app\src\main\AndroidManifest.xml:39:25-66
 66
 67                <category android:name="android.intent.category.LAUNCHER" />
-67-->C:\Users\MSI\Desktop\weather app\weather_app\android\app\src\main\AndroidManifest.xml:40:17-76
-67-->C:\Users\MSI\Desktop\weather app\weather_app\android\app\src\main\AndroidManifest.xml:40:27-74
+67-->C:\Users\MSI\Desktop\weather_forecast_app\android\app\src\main\AndroidManifest.xml:40:17-76
+67-->C:\Users\MSI\Desktop\weather_forecast_app\android\app\src\main\AndroidManifest.xml:40:27-74
 68            </intent-filter>
 69        </activity>
 70        <!--
@@ -114,41 +114,41 @@
 72             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
 73        -->
 74        <meta-data
-74-->C:\Users\MSI\Desktop\weather app\weather_app\android\app\src\main\AndroidManifest.xml:45:9-47:33
+74-->C:\Users\MSI\Desktop\weather_forecast_app\android\app\src\main\AndroidManifest.xml:45:9-47:33
 75            android:name="flutterEmbedding"
-75-->C:\Users\MSI\Desktop\weather app\weather_app\android\app\src\main\AndroidManifest.xml:46:13-44
+75-->C:\Users\MSI\Desktop\weather_forecast_app\android\app\src\main\AndroidManifest.xml:46:13-44
 76            android:value="2" />
-76-->C:\Users\MSI\Desktop\weather app\weather_app\android\app\src\main\AndroidManifest.xml:47:13-30
+76-->C:\Users\MSI\Desktop\weather_forecast_app\android\app\src\main\AndroidManifest.xml:47:13-30
 77
 78        <activity
-78-->[:url_launcher] C:\Users\MSI\Desktop\weather app\weather_app\build\url_launcher\intermediates\library_manifest\profile\AndroidManifest.xml:8:9-11:74
+78-->[:url_launcher] C:\Users\MSI\Desktop\weather_forecast_app\build\url_launcher\intermediates\library_manifest\profile\AndroidManifest.xml:8:9-11:74
 79            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
-79-->[:url_launcher] C:\Users\MSI\Desktop\weather app\weather_app\build\url_launcher\intermediates\library_manifest\profile\AndroidManifest.xml:9:13-74
+79-->[:url_launcher] C:\Users\MSI\Desktop\weather_forecast_app\build\url_launcher\intermediates\library_manifest\profile\AndroidManifest.xml:9:13-74
 80            android:exported="false"
-80-->[:url_launcher] C:\Users\MSI\Desktop\weather app\weather_app\build\url_launcher\intermediates\library_manifest\profile\AndroidManifest.xml:10:13-37
+80-->[:url_launcher] C:\Users\MSI\Desktop\weather_forecast_app\build\url_launcher\intermediates\library_manifest\profile\AndroidManifest.xml:10:13-37
 81            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-81-->[:url_launcher] C:\Users\MSI\Desktop\weather app\weather_app\build\url_launcher\intermediates\library_manifest\profile\AndroidManifest.xml:11:13-71
+81-->[:url_launcher] C:\Users\MSI\Desktop\weather_forecast_app\build\url_launcher\intermediates\library_manifest\profile\AndroidManifest.xml:11:13-71
 82
 83        <service
-83-->[:firebase_auth] C:\Users\MSI\Desktop\weather app\weather_app\build\firebase_auth\intermediates\library_manifest\profile\AndroidManifest.xml:8:9-12:19
+83-->[:firebase_auth] C:\Users\MSI\Desktop\weather_forecast_app\build\firebase_auth\intermediates\library_manifest\profile\AndroidManifest.xml:8:9-12:19
 84            android:name="com.google.firebase.components.ComponentDiscoveryService"
-84-->[:firebase_auth] C:\Users\MSI\Desktop\weather app\weather_app\build\firebase_auth\intermediates\library_manifest\profile\AndroidManifest.xml:8:18-89
+84-->[:firebase_auth] C:\Users\MSI\Desktop\weather_forecast_app\build\firebase_auth\intermediates\library_manifest\profile\AndroidManifest.xml:8:18-89
 85            android:directBootAware="true"
 85-->[com.google.firebase:firebase-common:19.5.0] C:\Users\MSI\.gradle\caches\transforms-2\files-2.1\a348beea78586f27ffc2391bf0a13f9b\jetified-firebase-common-19.5.0\AndroidManifest.xml:35:13-43
 86            android:exported="false" >
 86-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\MSI\.gradle\caches\transforms-2\files-2.1\4c933b82fb6ca37692eafcf5e1e9e376\jetified-firebase-auth-20.0.3\AndroidManifest.xml:76:13-37
 87            <meta-data
-87-->[:firebase_auth] C:\Users\MSI\Desktop\weather app\weather_app\build\firebase_auth\intermediates\library_manifest\profile\AndroidManifest.xml:9:13-11:85
+87-->[:firebase_auth] C:\Users\MSI\Desktop\weather_forecast_app\build\firebase_auth\intermediates\library_manifest\profile\AndroidManifest.xml:9:13-11:85
 88                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
-88-->[:firebase_auth] C:\Users\MSI\Desktop\weather app\weather_app\build\firebase_auth\intermediates\library_manifest\profile\AndroidManifest.xml:10:17-124
+88-->[:firebase_auth] C:\Users\MSI\Desktop\weather_forecast_app\build\firebase_auth\intermediates\library_manifest\profile\AndroidManifest.xml:10:17-124
 89                android:value="com.google.firebase.components.ComponentRegistrar" />
-89-->[:firebase_auth] C:\Users\MSI\Desktop\weather app\weather_app\build\firebase_auth\intermediates\library_manifest\profile\AndroidManifest.xml:11:17-82
+89-->[:firebase_auth] C:\Users\MSI\Desktop\weather_forecast_app\build\firebase_auth\intermediates\library_manifest\profile\AndroidManifest.xml:11:17-82
 90            <meta-data
-90-->[:firebase_core] C:\Users\MSI\Desktop\weather app\weather_app\build\firebase_core\intermediates\library_manifest\profile\AndroidManifest.xml:9:13-11:85
+90-->[:firebase_core] C:\Users\MSI\Desktop\weather_forecast_app\build\firebase_core\intermediates\library_manifest\profile\AndroidManifest.xml:9:13-11:85
 91                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-91-->[:firebase_core] C:\Users\MSI\Desktop\weather app\weather_app\build\firebase_core\intermediates\library_manifest\profile\AndroidManifest.xml:10:17-124
+91-->[:firebase_core] C:\Users\MSI\Desktop\weather_forecast_app\build\firebase_core\intermediates\library_manifest\profile\AndroidManifest.xml:10:17-124
 92                android:value="com.google.firebase.components.ComponentRegistrar" />
-92-->[:firebase_core] C:\Users\MSI\Desktop\weather app\weather_app\build\firebase_core\intermediates\library_manifest\profile\AndroidManifest.xml:11:17-82
+92-->[:firebase_core] C:\Users\MSI\Desktop\weather_forecast_app\build\firebase_core\intermediates\library_manifest\profile\AndroidManifest.xml:11:17-82
 93            <meta-data
 93-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\MSI\.gradle\caches\transforms-2\files-2.1\4c933b82fb6ca37692eafcf5e1e9e376\jetified-firebase-auth-20.0.3\AndroidManifest.xml:77:13-79:85
 94                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"

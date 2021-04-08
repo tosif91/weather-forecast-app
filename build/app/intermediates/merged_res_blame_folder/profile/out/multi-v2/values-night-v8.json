@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\MSI\\Desktop\\weather app\\weather_app\\build\\app\\intermediates\\incremental\\mergeProfileResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "C:\\Users\\MSI\\Desktop\\weather_forecast_app\\build\\app\\intermediates\\incremental\\mergeProfileResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\MSI\\Desktop\\weather app\\weather_app\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "C:\\Users\\MSI\\Desktop\\weather_forecast_app\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

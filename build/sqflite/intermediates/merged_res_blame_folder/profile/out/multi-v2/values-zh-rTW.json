@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\MSI\\Desktop\\weather app\\weather_app\\build\\sqflite\\intermediates\\res\\merged\\profile\\values-zh-rTW\\values-zh-rTW.xml",
+            "outputFile": "C:\\Users\\MSI\\Desktop\\weather_forecast_app\\build\\sqflite\\intermediates\\res\\merged\\profile\\values-zh-rTW\\values-zh-rTW.xml",
             "map": [
                 {
                     "source": "C:\\Users\\MSI\\.gradle\\caches\\transforms-2\\files-2.1\\d481b4719f34ec119768e958e701eaf6\\core-1.1.0\\res\\values-zh-rTW\\values-zh-rTW.xml",
@@ -16,7 +16,7 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\MSI\\Desktop\\weather app\\weather_app\\build\\sqflite\\intermediates\\incremental\\mergeProfileResources\\merged.dir\\values-zh-rTW\\values-zh-rTW.xml",
+            "outputFile": "C:\\Users\\MSI\\Desktop\\weather_forecast_app\\build\\sqflite\\intermediates\\incremental\\mergeProfileResources\\merged.dir\\values-zh-rTW\\values-zh-rTW.xml",
             "map": [
                 {
                     "source": "C:\\Users\\MSI\\.gradle\\caches\\transforms-2\\files-2.1\\d481b4719f34ec119768e958e701eaf6\\core-1.1.0\\res\\values-zh-rTW\\values-zh-rTW.xml",

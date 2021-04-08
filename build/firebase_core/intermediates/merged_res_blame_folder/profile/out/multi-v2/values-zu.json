@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\MSI\\Desktop\\weather app\\weather_app\\build\\firebase_core\\intermediates\\res\\merged\\profile\\values-zu\\values-zu.xml",
+            "outputFile": "C:\\Users\\MSI\\Desktop\\weather_forecast_app\\build\\firebase_core\\intermediates\\incremental\\mergeProfileResources\\merged.dir\\values-zu\\values-zu.xml",
             "map": [
                 {
                     "source": "C:\\Users\\MSI\\.gradle\\caches\\transforms-2\\files-2.1\\bca6c35aaf5e106d2e94cb61e353e66b\\jetified-play-services-basement-17.0.0\\res\\values-zu\\values.xml",
@@ -40,7 +40,7 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\MSI\\Desktop\\weather app\\weather_app\\build\\firebase_core\\intermediates\\incremental\\mergeProfileResources\\merged.dir\\values-zu\\values-zu.xml",
+            "outputFile": "C:\\Users\\MSI\\Desktop\\weather_forecast_app\\build\\firebase_core\\intermediates\\res\\merged\\profile\\values-zu\\values-zu.xml",
             "map": [
                 {
                     "source": "C:\\Users\\MSI\\.gradle\\caches\\transforms-2\\files-2.1\\bca6c35aaf5e106d2e94cb61e353e66b\\jetified-play-services-basement-17.0.0\\res\\values-zu\\values.xml",

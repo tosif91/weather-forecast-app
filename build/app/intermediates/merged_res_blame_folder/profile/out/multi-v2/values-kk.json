@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\MSI\\Desktop\\weather app\\weather_app\\build\\app\\intermediates\\incremental\\mergeProfileResources\\merged.dir\\values-kk\\values-kk.xml",
+            "outputFile": "C:\\Users\\MSI\\Desktop\\weather_forecast_app\\build\\app\\intermediates\\incremental\\mergeProfileResources\\merged.dir\\values-kk\\values-kk.xml",
             "map": [
                 {
                     "source": "C:\\Users\\MSI\\.gradle\\caches\\transforms-2\\files-2.1\\1d67e9f8fcd3c103d0f9ff5b012246e9\\jetified-play-services-base-17.1.0\\res\\values-kk\\values.xml",

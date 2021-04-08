@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\MSI\\Desktop\\weather app\\weather_app\\build\\app\\intermediates\\incremental\\mergeProfileResources\\merged.dir\\values-en-rIN\\values-en-rIN.xml",
+            "outputFile": "C:\\Users\\MSI\\Desktop\\weather_forecast_app\\build\\app\\intermediates\\incremental\\mergeProfileResources\\merged.dir\\values-en-rIN\\values-en-rIN.xml",
             "map": [
                 {
                     "source": "C:\\Users\\MSI\\.gradle\\caches\\transforms-2\\files-2.1\\d481b4719f34ec119768e958e701eaf6\\core-1.1.0\\res\\values-en-rIN\\values-en-rIN.xml",
