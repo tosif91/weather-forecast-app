@@ -93,7 +93,7 @@ class TodayWeather extends ViewModelWidget<WeatherInfoModel> with DataHandler {
                                           MainAxisAlignment.start,
                                       children: [
                                         Text(
-                                          '${data?.main?.temp}',
+                                          '${data?.main?.temp ?? '_'}',
                                           style: TextStyle(fontSize: 45),
                                         ),
                                         Row(
@@ -142,8 +142,8 @@ class TodayWeather extends ViewModelWidget<WeatherInfoModel> with DataHandler {
                                       shape: BoxShape.circle,
                                       border: Border.all(color: orange)),
                                   child: OptimizedCacheImage(
-                                    imageUrl:
-                                        getIconURL(data.weather?.first?.icon),
+                                    imageUrl: getIconURL(
+                                        data.weather?.first?.icon ?? ''),
                                   ),
                                   // child: Image.network(
                                   //   getIconURL(data.weather.first.icon),
@@ -162,7 +162,7 @@ class TodayWeather extends ViewModelWidget<WeatherInfoModel> with DataHandler {
                               Icon(FontAwesomeIcons.temperatureHigh),
                               const SizedBox(height: 5),
                               Text(
-                                '${data?.main?.tempMax} k',
+                                '${data?.main?.tempMax ?? ''} k',
                                 style: TextStyle(fontSize: 20),
                               )
                             ],
@@ -172,7 +172,7 @@ class TodayWeather extends ViewModelWidget<WeatherInfoModel> with DataHandler {
                               Icon(FontAwesomeIcons.temperatureLow),
                               const SizedBox(height: 5),
                               Text(
-                                '${data?.main?.tempMin} k',
+                                '${data?.main?.tempMin ?? ''} k',
                                 style: TextStyle(fontSize: 20),
                               )
                             ],
@@ -184,90 +184,78 @@ class TodayWeather extends ViewModelWidget<WeatherInfoModel> with DataHandler {
                         indent: 20,
                         color: Colors.white60,
                       ),
-                      (data?.clouds?.all == null)
-                          ? Container()
-                          : Row(
-                              // crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      'Cloudiness',
-                                      style: TextStyle(fontSize: 35),
-                                    ),
-                                    Text(
-                                      '${data.clouds.all}%',
-                                      style: TextStyle(
-                                          fontSize: 25, color: orange),
-                                    )
-                                  ],
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.all(15.0),
-                                  child: Opacity(
-                                    opacity: data.clouds.all / 100,
-                                    child: Icon(
-                                      FontAwesomeIcons.cloudflare,
-                                      size: 60,
-                                    ),
-                                  ),
-                                ),
-                              ],
+                      Row(
+                        // crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Cloudiness',
+                                style: TextStyle(fontSize: 35),
+                              ),
+                              Text(
+                                '${data?.clouds?.all ?? '_'}%',
+                                style: TextStyle(fontSize: 25, color: orange),
+                              )
+                            ],
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(15.0),
+                            child: Opacity(
+                              opacity: data.clouds.all / 100,
+                              child: Icon(
+                                FontAwesomeIcons.cloudflare,
+                                size: 60,
+                              ),
                             ),
-                      (data?.main?.humidity == null)
-                          ? Container()
-                          : Row(
-                              // crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      'Humidity',
-                                      style: TextStyle(fontSize: 35),
-                                    ),
-                                    Text(
-                                      '${data.main.humidity}%',
-                                      style: TextStyle(
-                                          fontSize: 25, color: orange),
-                                    )
-                                  ],
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.all(15.0),
-                                  child: Opacity(
-                                    opacity: data.main.humidity / 100,
-                                    child: Icon(
-                                      FontAwesomeIcons.water,
-                                      size: 60,
-                                    ),
-                                  ),
-                                ),
-                              ],
+                          ),
+                        ],
+                      ),
+                      Row(
+                        // crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Humidity',
+                                style: TextStyle(fontSize: 35),
+                              ),
+                              Text(
+                                '${data?.main?.humidity ?? '_'}%',
+                                style: TextStyle(fontSize: 25, color: orange),
+                              )
+                            ],
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(15.0),
+                            child: Opacity(
+                              opacity: data.main.humidity / 100,
+                              child: Icon(
+                                FontAwesomeIcons.water,
+                                size: 60,
+                              ),
                             ),
-                      (data?.main?.pressure == null)
-                          ? Container()
-                          : MainItem(
-                              data: Tag(
-                                  title: 'Pressure',
-                                  value: '${data.main.pressure} hPa')),
-                      (data?.main?.sea_lvl == null)
-                          ? Container()
-                          : MainItem(
-                              data: Tag(
-                                  title: 'Sea level',
-                                  value: '${data.main.sea_lvl} hPa')),
-                      (data?.main?.grnd_lvl == null)
-                          ? Container()
-                          : MainItem(
-                              data: Tag(
-                                  title: 'Ground level',
-                                  value: '${data.main.grnd_lvl} hPa')),
+                          ),
+                        ],
+                      ),
+                      MainItem(
+                          data: Tag(
+                              title: 'Pressure',
+                              value: '${data?.main?.pressure ?? '_'} hPa')),
+                      MainItem(
+                          data: Tag(
+                              title: 'Sea level',
+                              value: '${data?.main?.sea_lvl ?? '_'} hPa')),
+                      MainItem(
+                          data: Tag(
+                              title: 'Ground level',
+                              value: '${data?.main?.grnd_lvl ?? '_'} hPa')),
                       // Text(
                       //   'Scattered Cloud',
                       //   style: TextStyle(color: Colors.lightBlue),
@@ -275,43 +263,37 @@ class TodayWeather extends ViewModelWidget<WeatherInfoModel> with DataHandler {
                       const SizedBox(
                         height: 10,
                       ),
-                      (data.wind == null)
-                          ? Container()
-                          : WeatherInfoItem(
-                              title: 'Wind',
-                              data: [
-                                Tag(
-                                    title: 'Speed',
-                                    value: "${data.wind.speed} m/s"),
-                                Tag(title: 'Deg', value: '${data.wind.deg}')
-                              ],
-                            ),
-                      (data.snow == null)
-                          ? Container()
-                          : WeatherInfoItem(
-                              title: 'Snow',
-                              data: [
-                                Tag(
-                                    title: '1 Hour',
-                                    value: '${data.snow.first}'),
-                                Tag(
-                                    title: '2 Hour',
-                                    value: '${data.snow.second}')
-                              ],
-                            ),
-                      (data.rain == null)
-                          ? Container()
-                          : WeatherInfoItem(
-                              title: 'Rain',
-                              data: [
-                                Tag(
-                                    title: '1 Hour',
-                                    value: '${data.rain.first}'),
-                                Tag(
-                                    title: '2 Hour',
-                                    value: '${data.rain.second}')
-                              ],
-                            ),
+                      WeatherInfoItem(
+                        title: 'Wind',
+                        data: [
+                          Tag(
+                              title: 'Speed',
+                              value: "${data?.wind?.speed ?? '_'} m/s"),
+                          Tag(title: 'Deg', value: '${data?.wind?.deg ?? '_'}')
+                        ],
+                      ),
+                      WeatherInfoItem(
+                        title: 'Snow',
+                        data: [
+                          Tag(
+                              title: '1 Hour',
+                              value: '${data?.snow?.first ?? '_'}'),
+                          Tag(
+                              title: '2 Hour',
+                              value: '${data?.snow?.second ?? '_'}')
+                        ],
+                      ),
+                      WeatherInfoItem(
+                        title: 'Rain',
+                        data: [
+                          Tag(
+                              title: '1 Hour',
+                              value: '${data?.rain?.first ?? '-_'}'),
+                          Tag(
+                              title: '2 Hour',
+                              value: '${data?.rain?.second ?? '_'}')
+                        ],
+                      ),
 
                       // Column((ChildBackButtonDispatcher))
                     ],

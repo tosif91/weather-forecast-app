@@ -49,14 +49,7 @@ class WeatherForecast extends ViewModelWidget<WeatherInfoModel>
                                                 color: Colors.white60),
                                           ),
                                           Text(
-                                            (model?.currentWeatherResponse
-                                                            ?.name ==
-                                                        null ||
-                                                    model?.currentWeatherResponse
-                                                            ?.sys?.country ==
-                                                        null)
-                                                ? '_'
-                                                : '${model?.currentWeatherResponse?.name},${model?.currentWeatherResponse?.sys?.country}',
+                                            '${model?.currentWeatherResponse?.name ?? '_'},${model?.currentWeatherResponse?.sys?.country ?? '_'}',
                                             style: TextStyle(
                                                 fontSize: 12, color: orange),
                                           ),
@@ -158,7 +151,7 @@ class ForecastSubItem extends StatelessWidget with DataHandler {
                     elevation: 10,
                     child: Container(
                       child: OptimizedCacheImage(
-                        imageUrl: getIconURL(data.weather.first.icon),
+                        imageUrl: getIconURL(data?.weather?.first?.icon ?? ''),
                       ),
                       // child: Image.network(
                       //   getIconURL(data.weather.first.icon),
@@ -185,7 +178,7 @@ class ForecastSubItem extends StatelessWidget with DataHandler {
                             const SizedBox(
                               height: 10,
                             ),
-                            Text('${data?.main?.tempMax} K')
+                            Text('${data?.main?.tempMax ?? '_'} K')
                           ],
                         ),
                         const SizedBox(
@@ -197,7 +190,7 @@ class ForecastSubItem extends StatelessWidget with DataHandler {
                             const SizedBox(
                               height: 10,
                             ),
-                            Text('${data?.main?.tempMin} K')
+                            Text('${data?.main?.tempMin ?? '_'} K')
                           ],
                         ),
                         const SizedBox(
@@ -209,7 +202,7 @@ class ForecastSubItem extends StatelessWidget with DataHandler {
                             const SizedBox(
                               height: 10,
                             ),
-                            Text('${data?.wind?.speed} m/s')
+                            Text('${data?.wind?.speed ?? '_'} m/s')
                           ],
                         )
                       ],
@@ -222,43 +215,19 @@ class ForecastSubItem extends StatelessWidget with DataHandler {
               height: 5,
             ),
             Text(
-              '${data.weather?.first?.description}',
+              '${data.weather?.first?.description ?? '_'}',
               style: TextStyle(fontSize: 19),
             ),
             Divider(),
             SubTag(
-                title: 'Groud',
-                value: (data?.main?.grndLevel == null)
-                    ? ' _'
-                    : '${data.main.grndLevel} hPa'),
+                title: 'Groud', value: '${data?.main?.grndLevel ?? '_'} hPa'),
+            SubTag(title: 'Sea', value: '${data?.main?.seaLevel ?? '_'} hPa'),
+            SubTag(title: 'Cloudiness', value: '${data?.clouds?.all ?? '_'} %'),
             SubTag(
-                title: 'Sea',
-                value: (data?.main?.seaLevel == null)
-                    ? ' _'
-                    : '${data.main.seaLevel} hPa'),
-            SubTag(
-                title: 'Cloudiness',
-                value:
-                    (data.clouds.all == null) ? ' _' : '${data.clouds.all} %'),
-            SubTag(
-                title: 'Humidity',
-                value: (data?.main?.humidity == null)
-                    ? '_'
-                    : '${data.main.humidity} %'),
-            SubTag(
-                title: 'Rain',
-                value: (data?.rain?.the3H == null)
-                    ? ' _'
-                    : '${data.rain.the3H} mm/3h'),
-            SubTag(
-                title: 'Snow',
-                value: (data?.snow?.the3H == null)
-                    ? ' _'
-                    : '${data.snow.the3H} mm/3h'),
-            SubTag(
-                title: 'Visibility',
-                value:
-                    (data?.visibility == null) ? ' _' : '${data.visibility} m'),
+                title: 'Humidity', value: '${data?.main?.humidity ?? '_'} %'),
+            SubTag(title: 'Rain', value: '${data?.rain?.the3H ?? '_'} mm/3h'),
+            SubTag(title: 'Snow', value: '${data?.snow?.the3H ?? '_'} mm/3h'),
+            SubTag(title: 'Visibility', value: '${data?.visibility ?? '_'} m'),
           ],
         ),
       ),

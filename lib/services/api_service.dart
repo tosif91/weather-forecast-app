@@ -8,8 +8,8 @@ import 'package:weather_app/utils/data_type.dart';
 class ApiService {
   static BaseOptions options = new BaseOptions(
     baseUrl: baseURL,
-    connectTimeout: 10000,
-    receiveTimeout: 10000,
+    connectTimeout: 15000,
+    receiveTimeout: 15000,
   );
 
   Dio _dio = new Dio(

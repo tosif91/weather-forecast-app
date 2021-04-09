@@ -51,9 +51,7 @@ class HomeView extends StatelessWidget {
                         height: 5,
                       ),
                       Text(
-                        (model.currentAddress == null)
-                            ? '_'
-                            : '${model.currentAddress}',
+                        '${model.currentAddress ?? '_'}',
                         style: TextStyle(fontSize: 20),
                       ),
                       const SizedBox(
@@ -94,9 +92,7 @@ class HomeView extends StatelessWidget {
             ),
           ),
           appBar: CustomAppBar(
-            position: (model.currentlocation?.target != null)
-                ? model.currentlocation?.target
-                : LatLng(0.0, 0.0),
+            position: model.currentlocation?.target ?? LatLng(0.0, 0.0),
             callback: model.handleDrawer,
           ),
           body: (model.isBusy)

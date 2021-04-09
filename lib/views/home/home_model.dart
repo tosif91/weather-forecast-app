@@ -177,6 +177,7 @@ class HomeModel extends BaseViewModel {
         zoom: 14,
       );
     } catch (e) {
+      setBusy(false);
       print(e);
       //   DialogResponse response = await DialogService().showConfirmationDialog(
       //       title: 'Error',
