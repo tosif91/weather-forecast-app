@@ -120,7 +120,7 @@ class HomeView extends StatelessWidget {
                         // Positioned(top: 0, child: CustomAppBar()),
                         new Positioned(
                           top: (_height - 30) / 2,
-                          right: (_width - 25) / 2,
+                          right: (_width - 30) / 2,
                           child: new Icon(
                             FontAwesomeIcons.mapPin,
                             size: 30,

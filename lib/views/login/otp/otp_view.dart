@@ -58,7 +58,7 @@ class OTPView extends StatelessWidget {
                     const SizedBox(
                       height: 50,
                     ),
-                    UpdatingItem()
+                    DynamicItem()
                   ],
                 ),
               ),
@@ -70,7 +70,7 @@ class OTPView extends StatelessWidget {
   }
 }
 
-class UpdatingItem extends ViewModelWidget<OTPModel> {
+class DynamicItem extends ViewModelWidget<OTPModel> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
   @override

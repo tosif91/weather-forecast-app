@@ -8,7 +8,7 @@ class ConnectionService {
   StreamController connectionChangeController =
       new StreamController.broadcast();
   final Connectivity _connectivity = Connectivity();
-  StreamSubscription _connectionSubscription;
+  // StreamSubscription _connectionSubscription;
 
   void initialize() async {
     _connectivity.onConnectivityChanged.listen(_connectionChange);

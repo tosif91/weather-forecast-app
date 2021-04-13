@@ -26,22 +26,15 @@ class LogInView extends StatelessWidget {
                         style: heading1.copyWith(fontSize: 30),
                       ),
                       SizedBox(height: 30),
-                      SignInButton()
+                      Padding(
+                        padding: const EdgeInsets.all(15.0),
+                        child: LoginButton(
+                          title: 'SIGN IN',
+                          onpressed: () => model.navigateToMobile(),
+                        ),
+                      )
                     ],
                   ),
                 )));
-  }
-}
-
-class SignInButton extends ViewModelWidget<LogInModel> {
-  @override
-  Widget build(BuildContext context, LogInModel model) {
-    return Padding(
-      padding: const EdgeInsets.all(15.0),
-      child: LoginButton(
-        title: 'SIGN IN',
-        onpressed: () => model.navigateToMobile(),
-      ),
-    );
   }
 }

@@ -42,10 +42,6 @@ class HomeModel extends BaseViewModel {
     isError = value;
     notifyListeners();
   }
-  // bool isLogOut = false;
-  // setLogOut() {
-  //   isLogOut = !isLogOut;
-  // }
 
   initialize() async {
     setBusy(true);
@@ -143,25 +139,7 @@ class HomeModel extends BaseViewModel {
         '[{"elementType": "geometry","stylers": [{"color": "#212121"}]  },  {    "elementType": "labels.icon",    "stylers": [      {"visibility": "off"}    ]  },  {    "elementType": "labels.text.fill",    "stylers": [      {        "color": "#e56d1b"      }]  },  {    "elementType": "labels.text.stroke",    "stylers": [      {        "color": "#212121"      }    ]  },  {    "featureType": "administrative","elementType": "geometry",    "stylers": [     {        "color": "#757575"      }    ]  },  {    "featureType": "administrative.country",    "elementType": "labels.text.fill","stylers": [      {        "color": "#9e9e9e"      }    ]  },  {    "featureType": "administrative.land_parcel",    "stylers": [      {"visibility": "off"}]  },  {    "featureType": "administrative.locality", "elementType": "labels.text.fill",    "stylers": [{"color": "#bdbdbd"      }    ]  },  {    "featureType": "poi",    "elementType": "labels.text.fill",    "stylers": [      {        "color": "#757575"      }    ]  },  {"featureType": "poi.park",    "elementType": "geometry",    "stylers": [      {"color": "#181818"      }    ]  },  {    "featureType": "poi.park",    "elementType": "labels.text.fill",    "stylers": [      {"color": "#616161"      }    ]  },  {    "featureType": "poi.park",    "elementType": "labels.text.stroke",    "stylers": [      {        "color": "#1b1b1b"      }    ]  },  {    "featureType": "road",    "elementType": "geometry.fill",    "stylers": [      {"color": "#2c2c2c"      }    ]  },  {    "featureType": "road",    "elementType": "labels.text.fill",    "stylers": [      {       "color": "#8a8a8a"      }    ]  },  {    "featureType": "road.arterial",    "elementType": "geometry",    "stylers": [      {"color": "#373737"      }    ]  },  {    "featureType": "road.highway",    "elementType": "geometry",    "stylers": [      {        "color": "#3c3c3c"      }    ]  },  {    "featureType": "road.highway.controlled_access",    "elementType": "geometry",    "stylers": [{        "color": "#4e4e4e"      }    ]  },  {    "featureType": "road.local",    "elementType": "labels.text.fill",    "stylers": [      {        "color": "#616161"      }    ]  },  {    "featureType": "transit",    "elementType": "labels.text.fill",    "stylers": [{ "color": "#757575"}]  },  {    "featureType": "water",    "elementType": "geometry",    "stylers": [      {        "color": "#000000"      }   ]  },  {    "featureType": "water",    "elementType": "labels.text.fill",    "stylers": [      {        "color": "#3d3d3d"      }    ]  }]');
     this.controller = controller;
 
-    // addLoc(LatLng(position.latitude - 0.004, position.longitude - 0.001),
-    //     "ABCD GYM"); //only for dummy location
-
-    // locations.forEach((key, value) {
-    //   print("dist to" +
-    //       value +
-    //       " :" +
-    //       Geolocator.distanceBetween(position.latitude, position.longitude,
-    //               key.latitude, key.longitude)
-    //           .toString());
-    //   if (Geolocator.distanceBetween(position.latitude, position.longitude,
-    //           key.latitude, key.longitude) <=
-    //       5000) {
-    //     addLoc(key, value);
-    //   }
-    // });
-
     _mapController.complete(controller);
-    // setBusy(false);
   }
 
   Future<void> getUserLocation() async {
@@ -169,9 +147,7 @@ class HomeModel extends BaseViewModel {
       position = await Geolocator.getCurrentPosition(
           desiredAccuracy: LocationAccuracy.high);
       print("Current location: " + position.toString());
-      // addLoc(LatLng(position.latitude, position.longitude),
-      //     "Your current location",
-      //     isme: true);
+
       currentlocation = CameraPosition(
         target: LatLng(position.latitude, position.longitude),
         zoom: 14,
@@ -179,16 +155,8 @@ class HomeModel extends BaseViewModel {
     } catch (e) {
       setBusy(false);
       print(e);
-      //   DialogResponse response = await DialogService().showConfirmationDialog(
-      //       title: 'Error',
-      //       description:
-      //           'Map feature cannot be accessed without location permission',
-      //       cancelTitle: 'CANCEL',
-      //       confirmationTitle: 'RETRY');
+      //TODO: three types of exception found handle those
 
-      //   if (response.confirmed) {
-      //     // getCurrentLocation();
-      //   }
     }
   }
 
@@ -196,6 +164,5 @@ class HomeModel extends BaseViewModel {
   void dispose() {
     // TODO: implement dispose
     _connectionSubscription.cancel();
-    // super.dispose();
   }
 }
